@@ -1,0 +1,561 @@
+html {
+  font-size: 16px;
+  }
+/* 1rem = 16px*/
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: rgb(77, 77, 79);
+  background-color: rgb(255, 255, 255);
+}
+
+.wrapper {
+  max-width: 1050px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+/*general text styles */
+h1 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+p {
+  font-size: .8rem;
+  font-weight: 400;
+  line-height: 1rem;
+  color: rgb(128, 128, 128);
+}
+
+span {
+  font-size: .75rem;
+  line-height: 1rem;
+}
+
+
+/* navigation bar section */
+header {
+  background-color: rgb(255, 255, 255);
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 2.75rem;
+  padding-left: 1.5rem;
+}
+
+#logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding-top: .25rem;
+}
+
+#logo strong {
+  font-weight: 400;
+  color: rgb(170, 170, 170);
+}
+
+nav {
+  text-align: right;
+  flex-grow: 1;
+}
+
+.desktop a {
+  font-size: 1rem;
+  padding-right: 1rem;
+  color: rgb(77, 77, 79);
+  display: inline-block;
+  cursor: auto;
+  text-decoration: none;
+}
+
+.desktop a:hover,
+  .desktop a:active {
+  color: rgb(170, 170, 170);
+}
+
+nav.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  nav.desktop {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  nav.mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem 0 1.5rem;
+  }
+}
+
+/* top banner section */
+.banner {
+  background-color: rgb(220, 220, 220);
+  margin: 0 auto;
+}
+
+.banner .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.left img {
+  width: 100%;
+}
+
+.right {
+  width: 40%;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  padding-left: 1.25rem;
+  margin: 6rem 3.75rem 0 0;
+}
+
+.intro h4 {
+  margin: 2rem 0 2rem 0;
+}
+
+.intro a {
+  color: rgb(255, 255, 255);
+  background-color: rgb(77, 77, 79);
+  padding: 1rem 0 1rem 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.intro a:hover,
+  .intro a:active {
+  background-color: rgb(128, 128, 128);
+}
+
+@media only screen and (max-width: 800px) {
+  .banner .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner .left {
+    width: 100%;
+    padding: 0 0;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .intro {
+    margin: 2rem 1.5rem;
+    padding-left: 0;
+    align-items: center;
+  }
+
+  .intro a {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .intro a {
+    width: 100%;
+    background-color: rgb(128, 128, 128);
+  }
+
+  .intro a:hover {
+    opacity: .7;
+  }
+
+  .intro a:active {
+    opacity: .7;
+  }
+}
+
+
+/* second section with feature and 3 boxes */
+.feature {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left h2 {
+  padding-top: 2rem;
+}
+
+.left p {
+  padding: 1.5rem 1.5rem 1.5rem 0;
+}
+
+.content {
+  padding: 1rem .25rem 1rem 0;
+  width: 100%;
+}
+
+.content p {
+  padding-top: .5rem;
+}
+
+.content a {
+  color: rgb(75, 163, 244);
+  text-decoration: none;
+  font-size: .875rem;
+  display: block;
+  padding-top: .9rem;
+}
+
+.content a:hover {
+  color: rgb(157, 205, 249);
+  text-decoration: underline;
+}
+
+.content a:active {
+  color: rgb(157, 205, 249);
+  text-decoration: underline;
+}
+
+.feature .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-left: .0625rem solid rgb(220, 220, 220);
+  padding: 1rem 0 2rem 0;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.box img.desktop {
+  width: 35%;
+  padding: 1rem;
+}
+
+.box img.mobile {
+  display: none;
+}
+
+.middle {
+  border-top: .25rem double rgb(220, 220, 220);
+  border-bottom: .0625rem solid rgb(220, 220, 220);
+}
+
+.gray {
+  background-color: rgb(220, 220, 220);
+}
+
+@media only screen and (max-width: 480px) {
+  .feature .left {
+    display: none;
+  }
+
+  .feature .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-left: 0;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+
+  .gray {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .middle {
+    margin: 1rem 0;
+    border-top: 0;
+    border-bottom: 0;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .box img.desktop {
+    display: none;
+  }
+
+  .box img.mobile {
+    display: flex;
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+    padding: 0;
+    margin-top: 1rem;
+  }
+}
+
+
+/* courses grid section */
+.grid {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(245, 245, 245);
+  padding-bottom: 2rem;
+}
+
+.headline {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding: 2rem 0 2rem 0;
+}
+
+.course-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.course-list {
+  display: none;
+}
+
+.course {
+  background-color: rgb(255, 255, 255);
+  width: 32%;
+  height: 17rem;
+  margin-bottom: 1.5rem;
+}
+
+.course img {
+  width: 100%;
+}
+
+.course h3 {
+  padding-bottom: 1rem;
+}
+
+.course p {
+  padding-top: .55rem;
+}
+
+.course-content {
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.course-content span {
+  font-size: .8rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .grid {
+    border-top: .0625rem solid rgb(255, 255, 255);
+    border-bottom: .0625rem solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+  }
+
+  .grid .wrapper {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .course-grid {
+    display: none;
+  }
+
+  .course-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 1rem 0 1rem;
+  }
+
+.course-list a {
+    background-color: rgb(220, 220, 220);
+    color: rgb(56, 56, 56);
+    text-decoration: none;
+    padding: 1rem;
+    margin-bottom: .5rem;
+    font-size: 1.4rem;
+  }
+
+  .course-list a:hover,
+    .course-list a:active {
+      background-color: rgb(245, 245, 245);
+    }
+/*
+  .course-list a:active {
+      background-color: rgb(245, 245, 245);
+    } */
+}
+
+
+/* bottom thesis section */
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left video {
+  width: 100%;
+  object-fit: contain;
+}
+
+.bottom p {
+  padding: 1rem 0 0 0;
+}
+
+.bottom .headline {
+  padding-bottom: 0;
+}
+
+.bottom h3 {
+  padding-top: 1.5rem;
+}
+
+.bottom .box img {
+  width: 35%;
+  padding: 1rem;
+}
+
+.bottom .gray {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .flex .right {
+    display: none;
+  }
+
+  .flex .left {
+    width: 100%;
+    padding: 0;
+  }
+
+  .flex .left p {
+    display: none;
+  }
+
+  .flex .left h3 {
+    display: none;
+  }
+
+  .bottom h2 {
+    padding-bottom: 2rem;
+  }
+}
+
+/* footer section */
+footer {
+  border-top: .0625rem solid rgb(220, 220, 220);
+  background-color: rgb(255, 255, 255);
+  height: 3.5rem;
+}
+
+footer p {
+  padding: 0 1.5rem 0 1.5rem;
+  color: rgb(77, 77, 79);
+  font-size: .75rem;
+}
+
+footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: .75rem;
+}
+
+nav {
+  text-align: right;
+  flex-grow: 1;
+}
+
+.fineprint a {
+  display: inline-block;
+  padding-right: 1rem;
+  color: rgb(77, 77, 79);
+  font-size: .75rem;
+  cursor: auto;
+  text-decoration: none;
+}
+
+.fineprint a:hover,
+  .fineprint a:active {
+  color: rgb(170, 170, 170);
+}
+
+@media only screen and (max-width: 480px) {
+  footer {
+    border-top: 0;
+  }
+
+  footer .wrapper {
+    margin-top: 1.5rem;
+  }
+
+  footer .fineprint {
+    display: none;
+  }
+
+  footer p {
+    padding: 1rem 0 1rem 0;
+  }
+}
